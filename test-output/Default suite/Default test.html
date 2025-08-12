@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>21/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>24/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 01 12:25:06 IST 2025</td>
+<td>Started on:</td><td>Tue Aug 12 12:55:18 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>11 seconds (11979 ms)</td>
+<tr><td>Total time:</td><td>22 seconds (22680 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,61 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate booking form submission with all required fields empty", "Ticket Booking – Input Format Validation"</td>
-<td><div><pre>java.lang.AssertionError: From field validation missing. expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at Stepdefinitions.TicketBookingSteps.all_required_validation_errors_should_appear(TicketBookingSteps.java:59)
-	at ✽.validation errors should appear for all required fields(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/TicketBookingInputFormat.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace50359291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50359291'><pre>java.lang.AssertionError: From field validation missing. expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertFalse(Assert.java:79)
-	at Stepdefinitions.TicketBookingSteps.all_required_validation_errors_should_appear(TicketBookingSteps.java:59)
-	at ✽.validation errors should appear for all required fields(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/TicketBookingInputFormat.feature:7)
-</pre></div></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for valid and invalid phone number format", "Hotel Booking – Input Format Validation"</td>
-<td><div><pre>java.lang.AssertionError: BUG FOUND: The phone number error message element could not be found. The form likely submitted incorrectly.
-	at org.testng.Assert.fail(Assert.java:111)
-	at Stepdefinitions.HotelBookingSteps.the_phone_number_validation_should_be(HotelBookingSteps.java:53)
-	at ✽.the phone number validation should be &quot;invalid&quot;(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace605472344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace605472344'><pre>java.lang.AssertionError: BUG FOUND: The phone number error message element could not be found. The form likely submitted incorrectly.
-	at org.testng.Assert.fail(Assert.java:111)
-	at Stepdefinitions.HotelBookingSteps.the_phone_number_validation_should_be(HotelBookingSteps.java:53)
-	at ✽.the phone number validation should be &quot;invalid&quot;(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:8)
-</pre></div></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate past check-in date", "Hotel Booking – Input Format Validation"</td>
-<td><div><pre>java.lang.AssertionError: BUG FOUND: The check-in date error element was not found. This is a functional bug (no past date validation).
-	at org.testng.Assert.fail(Assert.java:111)
-	at Stepdefinitions.HotelBookingSteps.the_checkin_date_validation_should_be(HotelBookingSteps.java:82)
-	at ✽.the check-in date validation should be &quot;invalid&quot;(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace40829249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40829249'><pre>java.lang.AssertionError: BUG FOUND: The check-in date error element was not found. This is a functional bug (no past date validation).
-	at org.testng.Assert.fail(Assert.java:111)
-	at Stepdefinitions.HotelBookingSteps.the_checkin_date_validation_should_be(HotelBookingSteps.java:82)
-	at ✽.the check-in date validation should be &quot;invalid&quot;(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:19)
-</pre></div></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -131,7 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for valid and invalid phone number format", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
 <td></td>
 <td>0</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
@@ -148,72 +103,12 @@ function toggleAllBoxes() {
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate past check-in date", "Hotel Booking – Input Format Validation"</td>
 <td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for valid and invalid phone number format", "Hotel Booking – Input Format Validation"</td>
-<td></td>
 <td>1</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
 <td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
-<td>testRunner.TestRunner@11fc564b</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
-<td></td>
-<td>0</td>
+<td>2</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
@@ -222,6 +117,16 @@ function toggleAllBoxes() {
 <td>testRunner.TestRunner@11fc564b</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate past check-in date", "Hotel Booking – Input Format Validation"</td>
 <td></td>
 <td>0</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
@@ -231,9 +136,64 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit the Hotel Booking form with all valid data from Excel", "Hotel Booking – Input Format Validation"</td>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check for valid and invalid phone number format", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate booking form submission with all required fields empty", "Ticket Booking – Input Format Validation"</td>
 <td></td>
 <td>2</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Submit the Hotel Booking form with all valid data from Excel", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate required Booking Fields with one field missing", "Ticket Booking – Input Format Validation"</td>
+<td></td>
+<td>1</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
+<td>testRunner.TestRunner@11fc564b</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate visibility of required fields on Hotel Booking page", "Hotel Booking – Input Format Validation"</td>
+<td></td>
+<td>0</td>
 <td>testRunner.TestRunner@11fc564b</td></tr>
 </table><p>
 </body>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="21" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-01T12:25:06 IST" name="Default suite" finished-at="2025-08-01T12:25:17 IST" duration-ms="11979">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-08-01T12:25:06 IST" name="Default test" finished-at="2025-08-01T12:25:17 IST" duration-ms="11979">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="startBrowser()[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:03 IST" name="startBrowser" finished-at="2025-08-01T12:25:06 IST" duration-ms="2241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:06 IST" name="setUpClass" finished-at="2025-08-01T12:25:06 IST" duration-ms="440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2674ca88]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:08 IST" duration-ms="1747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check for valid and invalid phone number format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:09 IST" duration-ms="764" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check for valid and invalid phone number format"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG FOUND: The phone number error message element could not be found. The form likely submitted incorrectly.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG FOUND: The phone number error message element could not be found. The form likely submitted incorrectly.
+at org.testng.Assert.fail(Assert.java:111)
+at Stepdefinitions.HotelBookingSteps.the_phone_number_validation_should_be(HotelBookingSteps.java:53)
+at ✽.the phone number validation should be "invalid"(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:09 IST" duration-ms="888" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate past check-in date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[BUG FOUND: The check-in date error element was not found. This is a functional bug (no past date validation).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: BUG FOUND: The check-in date error element was not found. This is a functional bug (no past date validation).
+at org.testng.Assert.fail(Assert.java:111)
+at Stepdefinitions.HotelBookingSteps.the_checkin_date_validation_should_be(HotelBookingSteps.java:82)
+at ✽.the check-in date validation should be "invalid"(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/HotelBookingInputFormat.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate past check-in date"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="49" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="37" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="42" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="46" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="41" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="48" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="47" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:10 IST" duration-ms="50" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate visibility of required fields on Hotel Booking page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:13 IST" duration-ms="2425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Submit the Hotel Booking form with all valid data from Excel"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Hotel Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:13 IST" duration-ms="566" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate booking form submission with all required fields empty"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[From field validation missing. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: From field validation missing. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at Stepdefinitions.TicketBookingSteps.all_required_validation_errors_should_appear(TicketBookingSteps.java:59)
+at ✽.validation errors should appear for all required fields(file:///C:/Users/HP/Desktop/eclipse-workspace/EventManagementSystem/src/test/resources/Features/TicketBookingInputFormat.feature:7)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:14 IST" duration-ms="564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:14 IST" duration-ms="578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:15 IST" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:16 IST" duration-ms="606" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:16 IST" duration-ms="592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:17 IST" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:17 IST" duration-ms="614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate required Booking Fields with one field missing"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-08-01T12:25:17 IST" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate default value of Time dropdown is displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Ticket Booking – Input Format Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:17 IST" name="tearDownClass" finished-at="2025-08-01T12:25:17 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testRunner.TestRunner@11fc564b]" started-at="2025-08-01T12:25:18 IST" name="closeBrowser" finished-at="2025-08-01T12:25:18 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
